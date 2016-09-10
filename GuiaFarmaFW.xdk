@@ -6,65 +6,125 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "89a14304-71a2-4038-8f69-d26559894780",
-      "lastModifiedDate": 1473477157106,
+      "lastModifiedDate": 1473478634360,
       "creationDate": 1435720445077
     },
     "XDK-app-designer": "true",
     "sourceDirectory": "www",
     "startFile": "index.html",
-    "projectFiles": {},
+    "projectFiles": {
+      "xdk-publish-meta-data.json": {
+        "settings": {
+          "project": {
+            "XDK-not-deployed": "True"
+          }
+        }
+      }
+    },
     "projectDirectories": {},
     "libraries": [],
     "serviceMethods": [],
     "cordovaPluginsDirectory": "plugins",
     "cordovaPlugins": [
       {
-        "id": "org.apache.cordova.device",
-        "version": "0.2.13",
+        "id": "cordova-plugin-device",
+        "version": "1.1.2",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
         "dependsOn": [],
         "dependedBy": [],
         "originType": "cordova.io",
-        "origin": "org.apache.cordova.device",
-        "permissions": {}
+        "origin": "cordova-plugin-device",
+        "permissions": {},
+        "topLevel": true,
+        "checksum": "2373ccea",
+        "gitref": "",
+        "name": "Device",
+        "description": "Cordova Device Plugin"
       },
       {
-        "id": "org.apache.cordova.splashscreen",
-        "version": "0.3.5",
+        "id": "cordova-plugin-splashscreen",
+        "version": "3.2.2",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
         "dependsOn": [],
         "dependedBy": [],
         "originType": "cordova.io",
-        "origin": "org.apache.cordova.splashscreen",
-        "permissions": {}
+        "origin": "cordova-plugin-splashscreen",
+        "permissions": {},
+        "topLevel": true,
+        "checksum": "b3ad230b",
+        "gitref": "",
+        "name": "Splashscreen",
+        "description": "Cordova Splashscreen Plugin"
       },
       {
-        "id": "org.apache.cordova.geolocation",
-        "version": "0.3.11",
+        "id": "cordova-plugin-geolocation",
+        "version": "2.2.0",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
-        "dependsOn": [],
+        "dependsOn": [
+          "cordova-plugin-compat"
+        ],
         "dependedBy": [],
         "originType": "cordova.io",
-        "origin": "org.apache.cordova.geolocation",
-        "permissions": {}
+        "origin": "cordova-plugin-geolocation",
+        "permissions": {
+          "android:name": [
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION"
+          ]
+        },
+        "topLevel": true,
+        "checksum": "ec466374",
+        "gitref": "",
+        "name": "Geolocation",
+        "description": "Cordova Geolocation Plugin"
       },
       {
-        "id": "org.apache.cordova.network-information",
-        "version": "0.2.14",
+        "id": "cordova-plugin-network-information",
+        "version": "1.2.1",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
         "dependsOn": [],
         "dependedBy": [],
         "originType": "cordova.io",
-        "origin": "org.apache.cordova.network-information",
-        "permissions": {}
+        "origin": "cordova-plugin-network-information",
+        "permissions": {
+          "android:name": [
+            "android.permission.ACCESS_NETWORK_STATE"
+          ]
+        },
+        "topLevel": true,
+        "checksum": "9d8331a4",
+        "gitref": "",
+        "name": "Network Information",
+        "description": "Cordova Network Information Plugin"
+      },
+      {
+        "id": "cordova-plugin-compat",
+        "name": "Compat",
+        "version": "1.0.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-compat",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-compat",
+        "selectedState": "Included",
+        "checksum": "f36b9f8a",
+        "dependsOn": [],
+        "topLevel": false,
+        "permissions": {},
+        "description": "Cordova Compatibility Plugin",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-geolocation"
+        ],
+        "custom": "true"
       }
     ],
     "buildConfigurations": {
@@ -80,14 +140,15 @@
         "appName_": "GuiaFarmaFW",
         "appID_": "rs.fw.farmacias",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [
             "*"
           ],
           "intents": [
             "*"
           ],
-          "navigation": []
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],
@@ -95,7 +156,7 @@
         "excludedLibraries_": "",
         "certificateId_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "4.1.2",
+        "cordovaCLIVersion_": "6.2.0",
         "crosswalkVersion_": "11",
         "appVersion_": "1.0.0",
         "appAuthor_": "Leonir Lopes",
@@ -113,14 +174,15 @@
         "appName_": "GuiaFarmaFW",
         "appID_": "rs.fw.farmacias",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [
             "*"
           ],
           "intents": [
             "*"
           ],
-          "navigation": []
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],
@@ -128,7 +190,7 @@
         "excludedLibraries_": "",
         "certificateId_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "4.1.2",
+        "cordovaCLIVersion_": "6.2.0",
         "crosswalkVersion_": "11",
         "appVersion_": "1.0.0.0",
         "appAuthor_": "Leonir Lopes",
@@ -250,7 +312,7 @@
         "excludedLibraries_": "",
         "certificateId_": "",
         "appVersion_": "0.0.0.1",
-        "cordovaCLIVersion_": "5.4.1"
+        "cordovaCLIVersion_": "6.2.0"
       },
       "Android": {
         "platform_": "android",
@@ -334,8 +396,8 @@
         "excludedLibraries_": "",
         "certificateId_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "4.1.2",
-        "crosswalkVersion_": "11",
+        "cordovaCLIVersion_": "6.2.0",
+        "crosswalkVersion_": "19",
         "appVersion_": "1.0.0",
         "appAuthor_": "Leonir Lopes",
         "appDescription_": "Aplicação móvel híbrida com Intel XDK",
