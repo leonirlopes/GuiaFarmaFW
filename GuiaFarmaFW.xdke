@@ -1,9 +1,12 @@
 {
   "project": {
-    "projectSettingsVersion": "1.2",
-    "currentBuildConfiguration": "Android-Crosswalk",
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": "Android",
     "projectFiles": {},
     "projectDirectories": {},
     "initialAutoPluginCount": 0
+  },
+  "build-tab": {
+    "selectedTargets": []
   }
 }
