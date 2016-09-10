@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "89a14304-71a2-4038-8f69-d26559894780",
-      "lastModifiedDate": 1435753064753,
+      "lastModifiedDate": 1437250907582,
       "creationDate": 1435720445077
     },
     "XDK-app-designer": "true",
@@ -39,6 +39,15 @@
       {
         "id": "org.apache.cordova.geolocation",
         "version": "0.3.11",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.network-information",
+        "version": "0.2.14",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
